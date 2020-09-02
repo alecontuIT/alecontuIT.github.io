@@ -15,12 +15,21 @@ html, body {
 
 
 /*-------------
-    BODY
+     BODY
 -------------*/
 .corpo{
   padding-top: 2%;
   padding-bottom: 2%;
   font-size: 20px;
+}
+
+.aggiornamento{
+  font-size: 15px;
+}
+
+.up a{
+    text-decoration: none;
+    color: #000000;
 }
 
 /*-------------
