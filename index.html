@@ -81,7 +81,7 @@ h2 {text-align: center;}
       </p>
 
       <p>
-        The following image shows the volatility computed for each year, from 2015 to 2021:
+        The following image shows the volatility computed for each year, from 2015 to 2020:
       </p>
 
     </div>
@@ -118,7 +118,29 @@ h2 {text-align: center;}
       <p>
         It is possible to have a quicker view on this seeing the annual volume trade for each crypto:
       </p>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="./grafici/crypto_trade_year2.html" height="525" width="110%"></iframe>
+    </div>
+    <div class="carousel-item">
       <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="./grafici/crypto_trade_year.html" height="525" width="110%"></iframe>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="false"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
   </div>
 </div>
 
@@ -171,7 +193,7 @@ h2 {text-align: center;}
       <b class="font-weight-bold">Gold</b> is the one big safe haven asset that is always considered. For years, gold has been considered a store of value. As a physical commodity, it cannot be printed like money, and its value is not impacted by interest rate decisions made by a government. Because gold has historically maintained its value over time, it serves as a form of insurance against adverse economic events. When an adverse event occurs that lingers for a while, investors tend to pile their funds into gold, which drives up its price due to increased demand.
     </p>
     <p>
-      The following image shows the trend of gold, related to Bitcoin and the daily new covid cases in the world. For the gold had been used a gold ETC, where ETC stands for Exchange Traded Commodities that is traded on a stock exchange, like a stock, but tracks the price of a commodity or a commodity index. This allows investors to gain exposure to commodity markets without buying futures contracts or the physical commodity.
+      The following image shows the trend of gold, related to Bitcoin, Bund, S&P500 and the daily new covid cases in the world. For the gold had been used a gold ETC, where ETC stands for Exchange Traded Commodities that is traded on a stock exchange, like a stock, but tracks the price of a commodity or a commodity index. This allows investors to gain exposure to commodity markets without buying futures contracts or the physical commodity.
     </p>
     </p>
       <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="./grafici/gold_btc_covid.html" height="525" width="110%"></iframe>
@@ -188,12 +210,61 @@ h2 {text-align: center;}
         </div>
 </div>
 
+
+<div class="container corpo animated fadeInUp">
+  <h3 id="presentazione">Further analysis: drawdown and PAC</h2>
+    <!-- md per desktop, sm per tablet, niente per schermi di cellulari-->
+    <div class="col-sm-12">
+      <p>
+        <b class="font-weight-bold">Drawdown</b> is a financial term which refers to the observed distance between the highest and lowest peak of an asset value in a considered time interval.
+        A drawdown is therefore different from a loss, it is simply the movement from a peak to a low.
+        Drawdown is used as a tool for measuring the risk of an investment. If we examine the historical graph of a stock, in fact, we can have a clear and immediate confirmation of the risk inherent in a possible investment in it.
+        The following image shows a comparison of the assets's drawdown:
+      </p>
+      <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="./grafici/drawdown.html" height="525" width="110%"></iframe>
+      <p>
+        It's clear that Bitcoin had longer and harder time of drawdown compared to gold and S&P500.
+        The worst percentage drawdown of Bitcoin is from 2018 to mid 2019, over an year, where it reached the peak of -67%. Gold istead is reconfirmed as the safest and least volatile asset, indeed it never overcome the -20%.
+      </p>
+      <p>
+        So investing in Bitcoin is the worst choice an investor can make? The following analysis doesn't suggest that.
+      </p>
+      <p>
+        <b class="font-weight-bold">PAC</b> (in italian <i>Piano di Accumulo del Capitale</i>) is an investment solution based on periodic payments which allows to mitigate market fluctuations.
+        In this way the capital invested by the saver, in overall terms, grows gradually over time. Indeed this approach is better for medium to long-term investors.
+      </p>
+      <p>
+        I started with a comparison of a PAC applied separately for Bitcoin, Gold and S&P500 for the year 2021. The PAC is done with an initial investment of 1000$ and a recurring investment of 200$ each single month.
+      </p>
+      <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="./grafici/pac2021.html" height="525" width="110%"></iframe>
+      <p>
+        As the image shows, only Bitcoin investment seems to be profitable. Instead both gold and S&P500 assets are under the red-dotted line that represent the total investment.
+      </p>
+      <p>
+        Then I repeated the analysis but with the investment starting from 2020, till the end of 2021.
+      </p>
+      <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="./grafici/pac2020.html" height="525" width="110%"></iframe>
+      <p>
+        In this case the Bitcoin overcome the other 2 assets, reaching an exponential growth. This behaviour is given by the fact that Bitcoin reached its peak of all the time. Also with S&P500 the investor would had a profit, instead again with gold there is a loss.
+      </p>
+      <p>
+        With the last analysis the investment start from 2018.
+      </p>
+      <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="./grafici/pac2018.html" height="525" width="110%"></iframe>
+      <p>
+        This last plot shows how the PAC is a useful investment strategy if applied in the long term. Indeed in this last case  with both gold and S&P500 we would have a profit (20% and 45% of profit respectively). But Bitcoin is reconfirmed as the most profitable asset gaining a profit of 600%!
+      </p>
+  </div>
+</div>
+
+
+
 <div class="container corpo animated fadeInUp">
   <h3 id="presentazione">Conclusions</h2>
     <!-- md per desktop, sm per tablet, niente per schermi di cellulari-->
     <div class="col-sm-12">
       <p>
-        This analysis shows how the covid-19 pandemic had an impact on the world economy and there is a direct correlation between it and the safe haven assets. But as the graphs demonstrated,    <b class="font-weight-bold"> Bitcoin still can't be considered a safe haven asset like gold</b>. Bitcoin still remain an interesting asset, but gold has a millennial history as substitute of money and exchange good. Bitcoin instead is still too much unstable and it's used often with a purely speculative purpose, which accentuates its volatility. Instead speculation and a safe haven asset can be considered almost polar opposites.
+        This analysis shows how the covid-19 pandemic had an impact on the world economy and there is a direct correlation between it and the safe haven assets. But as the graphs demonstrated,  <b class="font-weight-bold"> Bitcoin still can't be considered a safe haven asset like gold</b> (that have low volatility but bring also low profits, as the PAC analysis showed). Instead Bitcoin is still too much unstable and it's used often with a purely speculative purpose, which accentuates its volatility. Anyway, as the last analysis showed, it had way better results in a PAC investment strategy both in the short and long term. So Bitcoin can be considered to be iserted in an investment portfolio, not like a safe asset, but still as a valuable (and volatile) option.
       </p>
   </div>
 </div>
