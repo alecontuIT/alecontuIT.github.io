@@ -9,17 +9,38 @@ html, body {
 /*-------------
     HEADER
 -------------*/
-#logo:hover{
-  color: #ddd;
+#logo{
+  font-weight: 800;
+  color:#116fc4;
 }
 
+#logo:hover{
+  color:#1686eb;
+}
+
+/*--------------------
+     PESONAL IMG
+--------------------*/
+.images img{
+  position: absolute;
+  height: 100%;
+/*  min-height: 300px;*/
+  left: 0%;
+  bottom : 0;
+  transition: bottom 1s, left 1s;
+}
+.images:hover .shape{
+  bottom: 5%;
+}
+.images:hover .alecontu{
+  left: 5%;
+}
 
 /*-------------
      BODY
 -------------*/
 .corpo{
   padding-top: 2%;
-  padding-bottom: 2%;
   font-size: 20px;
 }
 
@@ -31,17 +52,32 @@ html, body {
     text-decoration: none;
     color: #000000;
 }
-
+/* -----------------
+    CV BUTTON
+------------------*/
+.cv{
+  border-color: #116fc4;
+}
+.cv:hover {
+  background-color: #116fc4;
+}
+.cv:hover a{
+  color: white;
+}
+.cv a{
+  text-decoration: none;
+  color: #116fc4;
+}
 /*-------------
     FOOTER
 -------------*/
 
 .footer{
-  padding-bottom:  10px;
   padding-top: 10px;
+  margin-top: 20px;
 }
 #contatti{
-  color: #fff;
+  color: #116fc4;
   font-weight: 800;
   font-size: 18px;
 }
@@ -50,7 +86,8 @@ html, body {
 }
 .footer a{
   font-size: 15px;
-  color: #fff;
+  color: #116fc4;
+  font-weight: 550;
   text-decoration: none;
 }
 .footer a:hover{
