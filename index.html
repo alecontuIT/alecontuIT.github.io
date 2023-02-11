@@ -33,6 +33,13 @@ h2 {text-align: center;}
   </nav>
 </header>
 
+<div id="overlay">
+  <div width="1000" height="1000">
+    <div style="display: block" class="align-items-center d-flex justify-content-center">
+     <iframe alt="Loading" src="https://giphy.com/embed/l3nWhI38IWDofyDrW" width="550" height="550" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/thinking-l3nWhI38IWDofyDrW"></a></p>
+    </div>
+  </div>
+</div>
 
 <div class="container corpo animated fadeInUp">
   <div class="row">
@@ -111,6 +118,13 @@ h2 {text-align: center;}
     .typeString('creativo')
     .pauseFor(1000)
     .start()
+  </script>
+  <script>
+    $(window).load(function(){
+     // PAGE IS FULLY LOADED
+     // FADE OUT YOUR OVERLAYING DIV
+     $('#overlay').fadeOut();
+    });
   </script>
 </body>
 </html>
