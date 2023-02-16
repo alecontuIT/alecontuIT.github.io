@@ -52,6 +52,19 @@ html, body {
     text-decoration: none;
     color: #000000;
 }
+
+p{
+  font-size: 24px;
+}
+
+/* bold and blue */
+.bb{
+  color:#116fc4;
+  font-weight: 600;
+}
+.evid{
+  background:#BAE4FF;
+}
 /* -----------------
     CV BUTTON
 ------------------*/
