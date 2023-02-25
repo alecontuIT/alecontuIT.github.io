@@ -81,6 +81,21 @@ p{
   text-decoration: none;
   color: #116fc4;
 }
+
+/*-------------
+    PROJECTS
+-------------*/
+.project table{
+  display: none;
+}
+.project:hover table{
+  display: block;
+}
+.project:hover h4{
+  color:#1686eb;
+  font-weight: 800;
+}
+
 /*-------------
     FOOTER
 -------------*/
